@@ -70,3 +70,104 @@
     bottom: 122px;
     display: inline-block;
 }
+
+/* orange car */
+
+.car2 {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    animation-name: orangecar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes orangecar {
+    0% {
+        left: -200px;
+    }
+    25%{
+        left: 300px;
+    }
+    50% {
+        left: 800px;
+    }
+    75%{
+        left: 1350px;
+    }
+    100% {
+        left: 1800px;
+    }
+}
+
+.car2 .orange_car {
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 310px;
+    right: 450px;
+    display: inline-block;
+}
+
+
+.gray_wheels {
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.gray_wheels img {
+    width: 50%;
+    height: 50%;
+    animation:wheels 1s linear infinite;
+}
+
+.front_wheel {
+    position: absolute;
+}
+.back_wheel{
+    position: absolute;
+}
+
+@keyframes wheels {
+    100%{
+        transform: rotate(-360deg);
+    }
+} 
+
+.orange_wheels{
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 2;
+    left: 0%;
+}
+
+.orange_wheels img {
+    width: 87px;
+    height: 89px;
+    animation: orange_wheel 1s linear infinite;
+}
+
+.orange_frontwheel{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    right: 12px;
+    bottom: 54px;
+}
+.orange_backwheel{
+    width: 84px;
+    height: 93px;
+    position: absolute;
+    right: 307px;
+    bottom: 58px;
+}
+
+@keyframes orange_wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
