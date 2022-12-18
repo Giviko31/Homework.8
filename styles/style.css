@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_box {
+    height: 100vh;
+    width: 100%;
+}
+
+.main_box img {
+    height: 99vh;
+    width: 100%;
+}
+
+/* gray car  */
+.car1 {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    animation-name: graycar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes graycar {
+    0% {
+        right: -200px;
+    }
+    25%{
+        right: 300px;
+    }
+    50% {
+        right: 800px;
+    }
+    75%{
+        right: 1350px;
+    }
+    100% {
+        right: 1800px;
+    }
+}
+
+.car1 .first_car {
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    bottom: 340px;
+    left: 950px;
+    display: inline-block;
+}
+
+.car1 .front_wheel {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 1027px;
+    bottom: 122px;
+    display: inline-block;
+}
+
+.car1 .back_wheel {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 1286px;
+    bottom: 122px;
+    display: inline-block;
+}
